@@ -21,15 +21,15 @@ const treasure = (location) => {
   // if the count drops to 0 end the game
   document.getElementById('counter').innerHTML = count
   if (location === chest) {
-    document.getElementById(location).innerHTML = "<img src=\"https://freesvg.org/img/1332534810.png\" width=\"100px\" height=\"100px\">"
+    document.getElementById(location).innerHTML = "<img src=\"images/treasureChest.png\" width=\"100px\" height=\"100px\">"
     alert("You won!")
     end = true
   } else if (location === skull) {
-    document.getElementById(location).innerHTML = "<img src=\"https://freesvg.org/img/DhulKarnain-Skull.png\" width=\"100px\" height=\"100px\">"
+    document.getElementById(location).innerHTML = "<img src=\"images/skull.svg\" width=\"100px\" height=\"100px\">"
     alert("You die!")
     end = true
     } else {
-    document.getElementById(location).innerHTML = "&#127998"
+    document.getElementById(location).innerHTML = ""
         if (count === 0 ){
         alert("Game Over")
   }
